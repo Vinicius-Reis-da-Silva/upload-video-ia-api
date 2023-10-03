@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "API open.ai, IA Generativa"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "03e91373-7ece-4fc8-b94a-84474dc59f6e",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
